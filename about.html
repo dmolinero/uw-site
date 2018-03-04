@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About | Dave Molinero</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/main.css">
+    <link rel="stylesheet" href="scripts/grid.css">
+</head>
+
+<body>
+    <!-- Logo and Navigation -->
+    <header class="title-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h2 id="logo">David Molinero</h2>
+                </div>
+                <div class="col-7">
+                    <i class="nav-icon fas fa-bars fa-2x" onclick="openMenu()"></i>
+                    <nav id="nav">
+                        <ul>
+                            <li class="close-button"><a onclick="closeMenu()"><i class="far fa-times-circle fa-2x"></i></a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><span class="current">About</span></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main page content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 about-text">
+                    <span class="heading-bubble hidden-lg"><img src="images/molinero-400.jpg" alt="David Molinero" /></span><h1>About</h1>
+                    <p>David Molinero is a software engineer who specializes in building web apps with Angular, Vue, and Php. He is also familiar MySQL, Python, and a varietly of ops tools like Kubernetes, Docker, and Vagrant.</p>
+                    <p>David currently works as an engineer for a healthcare startup in Seattle, Washington where he’s also completeting a MS in Human Centered Design and Engineering from the University of Washington.</p>
+                    <ul class="tech-icons">
+                        <li><i class="fab fa-js"></i><li>
+                        <li><i class="fab fa-angular"></i></li>
+                        <li><i class="fab fa-vuejs"></i></li>
+                        <li><i class="fab fa-php"></i></li>
+                        <li><i class="fab fa-python"></i></li>
+                    </ul>
+                </div>
+                <div class="col-6 about-image hidden-sm">
+                    <img src="images/molinero-400.jpg" alt="David Molinero" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Begin Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy;2018 David Molinero. All rights reserved.</p>
+                    <ul class="social-links">
+                    <li><a href="https://github.com/dmolinero"><img src="images/github.svg"></a></li>
+                    <li><a href="https://twitter.com/DaveMolinero"><img src="images/twitter.svg"></a></li>
+                    <li><a href="https://www.linkedin.com/in/david-molinero"><img src="images/linkedin.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+    function openMenu() {
+        var menu = document.getElementById('nav');
+        menu.classList.add('open');
+    }
+
+    function closeMenu() {
+        var menu = document.getElementById('nav');
+        menu.classList.remove('open');
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,600');
+
+html * {
+    box-sizing: border-box !important;
+    font-family: 'Hind', sans-serif;
+    color: #434343;
+    outline: 0;
+}
+
+html {
+    font-size: 8px;
+}
+
+@media only screen and (min-width: 45rem) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    html {
+        font-size: 10px;
+    }
+}
+
+html,
+body,
+ul,
+li,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-content {
+    margin-top: 10rem;
+    padding: 10rem 0;
+    background: #EFF1F2;
+}
+
+#logo {
+    margin-top: 2.6rem;
+}
+
+
+.heading-bubble {
+    display: inline-block;
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    border-radius: 50%;
+    padding: 0;
+    overflow: hidden;
+    top: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+
+
+
+
+
+/*TYPOGRAPHY*/
+
+p,
+a,
+li,
+label,
+input,
+textarea {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+a {
+    color: #1e78d7;
+}
+
+a:visited {
+    color: #1860ac;
+}
+
+a {
+    color: #4a93df;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h5 {
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/*NAVIGATION*/
+
+.title-nav {
+    margin-top: 0px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    height: 10rem;
+}
+
+.nav-icon {
+    position: absolute;
+    right: 1.75rem;
+    top: 4rem;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: calc(100vh);
+    background: #fff;
+    z-index: 1000;
+    transition: transform .17s ease-out;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+nav.open {
+    opacity: 1;
+    transform: translateX(0);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav li a {
+    color: #434343;
+    padding: 2em;
+    transition: all .23s ease-out;
+    text-decoration: none;
+    display: block;
+}
+
+nav li span {
+    color: #434343;
+    padding: 2em;
+    padding-top: 4rem;
+    transition: all .23s ease-out;
+    text-decoration: none;
+    display: block;
+    height: 10rem;
+    text-align: left;
+}
+
+nav li a:visited {
+    color: #434343;
+}
+
+nav li .current {
+    background: #EFF1F2;
+}
+
+nav li a:hover {
+    background: #EFF1F2;
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+}
+
+nav li {
+    display: block;
+    overflow: hidden;
+}
+
+@media(min-width: 45rem) {
+    nav {
+        position: relative;
+        height: 10rem;
+        top: 0;
+        width: 100%;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    nav.open {
+        box-shadow: none;
+    }
+
+    nav ul {
+        text-align: right;
+        font-size: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 25%;
+        height: 10rem;
+    }
+
+    nav li a {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        height: 10rem;
+        padding: 4rem 0;
+    }
+
+    nav li span {
+        text-align: left;
+    }
+
+    .close-button,
+    .nav-icon {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACT FORM*/
+
+#contact-form label {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 1.5rem 2rem 1rem 2rem;
+    border: none;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    border: 0;
+    border-bottom: .2rem solid #fff;
+    position: relative;
+    transition: all .16s ease-out;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-bottom: .2rem solid #1e78d7;
+}
+
+#contact-form textarea {
+    padding-top: 1.8rem;
+    overflow: hidden;
+    resize: vertical;
+}
+
+#contact-form [type="submit"] {
+    border: none;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    padding: 10rem 0;
+}
+
+footer ul.social-links {
+    list-style: none;
+    margin: 0;
+    position: relative;
+}
+
+footer ul.social-links li {
+    margin-top: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.6rem;
+}
+
+
+
+
+
+
+
+
+/*BUTTONS*/
+
+.primary-button {
+    background: #1e78d7;
+    color: #fff;
+    width: auto !important;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+}
+
+.primary-button:hover {
+    background: #3485db;
+}
+
+a.primary-button-inline {
+    background: #1e78d7;
+    color: #fff;
+    width: auto !important;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    text-decoration: none;
+    transition: all .16s ease-out;
+}
+
+a.primary-button-inline:hover {
+    background: #3485db;
+}
+
+
+
+
+
+
+
+/*HOME PAGE*/
+
+.welcome-text h1 {
+    margin-bottom: 4rem;
+}
+
+.welcome-text {
+    text-align: left;
+}
+
+@media only screen and (min-width: 45rem) {
+
+    .welcome-text {
+        text-align: left;
+        position: relative;
+        left: 31.33%;
+        padding-left: 2rem;
+    }
+    .welcome-image {
+        position: relative;
+        left: -66.66%;
+    }
+}
+
+
+
+/* About Page*/
+
+.about-text p {
+    margin-bottom: 2rem;
+}
+
+.tech-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-icons li {
+    margin-right: 1rem;
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.about-image {
+    text-align: right;
+}
+
+.about-image img {
+    max-width: 30rem;
+}
+
+
+
+/*Projects Page*/
+
+.project-preview {
+    max-width: 320px;
+    margin-bottom: 4rem;
+}
+
+.project-preview h4 {
+    margin-top: 2rem;
+}
+
+.project-preview p {
+    margin-top: .5rem;
+}
+
+.project-preview-image {
+    display: block;
+    position: relative;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.project-preview-image::after {
+    font-size: 1.7rem;
+    line-height: 1;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    content: "View Project";
+    text-align: center;
+    padding-top: calc(50% - .85rem);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #1e78d7;
+    transition: all .16s ease-out;
+}
+
+.project-preview-image:hover::after {
+    opacity: 1;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | Dave Molinero</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/main.css">
+    <link rel="stylesheet" href="scripts/grid.css">
+</head>
+
+<body>
+    <!-- Logo and Navigation -->
+    <header class="title-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h2 id="logo">David Molinero</h2>
+                </div>
+                <div class="col-7">
+                    <i class="nav-icon fas fa-bars fa-2x" onclick="openMenu()"></i>
+                    <nav id="nav">
+                        <ul>
+                            <li class="close-button"><a onclick="closeMenu()"><i class="far fa-times-circle fa-2x"></i></a></li>
+                            <li><span class="current" href="index.html">Home</span></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main page content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="row center-vertically">
+                <div class="col-8 m-b-0 welcome-text">
+                    <h1 class="welcome">
+                        David Molinero is a software engineer located in Seattle.
+                    </h1>
+                    <p>Check out some of my <a href="projects.html" class="primary-button-inline">projects.</a></p>
+                </div>
+                <div class="col-4 m-b-0 welcome-image hidden-sm">
+                    <img src="images/code.jpg" alt="Code" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Begin Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy;2018 David Molinero. All rights reserved.</p>
+                    <ul class="social-links">
+                    <li><a href="https://github.com/dmolinero"><img src="images/github.svg"></a></li>
+                    <li><a href="https://twitter.com/DaveMolinero"><img src="images/twitter.svg"></a></li>
+                    <li><a href="https://www.linkedin.com/in/david-molinero"><img src="images/linkedin.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+    function openMenu() {
+        var menu = document.getElementById('nav');
+        menu.classList.add('open');
+    }
+
+    function closeMenu() {
+        var menu = document.getElementById('nav');
+        menu.classList.remove('open');
+    }
+    </script>
+</body>
+
+</html>
