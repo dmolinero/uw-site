@@ -73,6 +73,7 @@ img {
 
 
 
+
 /*TYPOGRAPHY*/
 
 p,
@@ -111,14 +112,19 @@ h2 {
 }
 
 h3 {
-    font-size: 4.2rem;
+    font-size: 2.5rem;
     font-weight: 400;
+}
+
+h3.subtitle {
+    margin-top: -1.5rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.2;
+    margin-bottom: .5rem;
 }
 
 h5 {
@@ -130,7 +136,6 @@ h5 {
     font-size: 4.2rem;
     font-weight: 400;
 }
-
 
 
 
@@ -250,7 +255,8 @@ nav li {
     }
 
     nav li span {
-        text-align: left;
+        text-align: center;
+        padding: 4rem 0;
     }
 
     .close-button,
@@ -258,6 +264,7 @@ nav li {
         display: none;
     }
 }
+
 
 
 
@@ -311,6 +318,7 @@ nav li {
 
 
 
+
 /*FOOTER*/
 
 footer {
@@ -331,6 +339,7 @@ footer ul.social-links li {
     height: 3rem;
     margin-right: 1.6rem;
 }
+
 
 
 
@@ -375,6 +384,7 @@ a.primary-button-inline:hover {
 
 
 
+
 /*HOME PAGE*/
 
 .welcome-text h1 {
@@ -398,6 +408,7 @@ a.primary-button-inline:hover {
         left: -66.66%;
     }
 }
+
 
 
 
@@ -425,6 +436,7 @@ a.primary-button-inline:hover {
 .about-image img {
     max-width: 30rem;
 }
+
 
 
 
@@ -471,4 +483,31 @@ a.primary-button-inline:hover {
 
 .project-preview-image:hover::after {
     opacity: 1;
+}
+
+
+
+
+/*WTA PAGE*/
+
+.wta-page p {
+    margin-bottom: 2rem;
+}
+
+.project-logo {
+    max-width: 100px;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 45rem) {
+
+    .project-logo {
+        max-width: 100%;
+        display: inline-block;
+    }
+}
+
+.wta-page div.section-title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }

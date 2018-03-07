@@ -6,11 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/global.js"></script>
     <link rel="stylesheet" href="scripts/main.css">
     <link rel="stylesheet" href="scripts/grid.css">
 </head>
 
-<body>
+<body class="wta-page">
     <!-- Logo and Navigation -->
     <header class="title-nav">
         <div class="container">
@@ -24,8 +25,8 @@
                         <ul>
                             <li class="close-button"><a onclick="closeMenu()"><i class="far fa-times-circle fa-2x"></i></a></li>
                             <li><a href="index.html">Home</a></li>
-                            <li><span class="current">About</span></li>
-                            <li><a class="current" href="projects.html">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><span class="current" href="projects.html">Projects</span></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -33,18 +34,39 @@
             </div>
         </div>
     </header>
-
     <!-- Main page content -->
     <section class="main-content">
         <div class="container">
+            <div class="row center-vertically">
+                 <div class="col-3">
+                    <div class="project-logo">
+                        <img src="images/wta-400.jpg" alt="Washington Trails Association Logo">
+                    </div>
+                </div>
+                <div class="col-9">
+                    <h1>Data Visualization Tool</h1>
+                    <h3 class="subtitle">Washington Trails Association</h3>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-12">
-                    <h1>Washington Trails Association Project</h1>
+                <div class="col-12 section-title">
+                    <h2>Our Opportunity</h2>
+                </div>
+                <div class="col-6">
+                    <h4>The Problem</h4>
+                    <p>The Washington Trails Association had accumulated a large amount of donor data, but had no established method for visualizing it.</p>
+                    <h4>Client's Goals</h4>
+                    <p>They were aware of some general trends among their donors, but wanted to be able to visual donations goegraphically and look for trends over time.</p>
+                </div>
+                <div class="col-6">
+                    <h4>Contraints</h4>
+                    <p>The WTA had recently purchased a tableau subscription and wanted to use Tableau for the tool. This was also a class project at the UW, so we had about four weeks to complete the project</p>
+                    <h4>The data</h4>
+                    <p>The existing data they had was in csv format. There was one large file witho about 100,000 rows of data spanning a 10 year time range.</p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Begin Footer -->
     <footer>
         <div class="container">
@@ -52,25 +74,13 @@
                 <div class="col-12">
                     <p>&copy;2018 David Molinero. All rights reserved.</p>
                     <ul class="social-links">
-                    <li><a href="https://github.com/dmolinero"><img src="images/github.svg"></a></li>
-                    <li><a href="https://twitter.com/DaveMolinero"><img src="images/twitter.svg"></a></li>
-                    <li><a href="https://www.linkedin.com/in/david-molinero"><img src="images/linkedin.svg"></a></li>
-                </ul>
+                        <li><a href="https://github.com/dmolinero"><img src="images/github.svg"></a></li>
+                        <li><a href="https://twitter.com/DaveMolinero"><img src="images/twitter.svg"></a></li>
+                        <li><a href="https://www.linkedin.com/in/david-molinero"><img src="images/linkedin.svg"></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
     </footer>
-    
-    <script>
-    function openMenu() {
-        var menu = document.getElementById('nav');
-        menu.classList.add('open');
-    }
-
-    function closeMenu() {
-        var menu = document.getElementById('nav');
-        menu.classList.remove('open');
-    }
-    </script>
 </body>
 
 </html>
