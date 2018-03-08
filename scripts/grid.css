@@ -234,6 +234,6 @@
     }
 }
 
-.m-b-0 {
+[class^="col-"].mobile-stack {
     margin-bottom: 0 !important;
 }

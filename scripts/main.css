@@ -67,13 +67,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
 /*TYPOGRAPHY*/
 
 p,
@@ -136,11 +129,6 @@ h5 {
     font-size: 4.2rem;
     font-weight: 400;
 }
-
-
-
-
-
 
 
 /*NAVIGATION*/
@@ -267,15 +255,26 @@ nav li {
 
 
 
+/*FOOTER*/
 
+footer {
+    padding: 10rem 0;
+}
 
+footer ul.social-links {
+    list-style: none;
+    margin: 0;
+    position: relative;
+}
 
-
-
-
-
-
-
+footer ul.social-links li {
+    margin-top: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.6rem;
+}
 
 
 /*CONTACT FORM*/
@@ -312,40 +311,6 @@ nav li {
 #contact-form [type="submit"] {
     border: none;
 }
-
-
-
-
-
-
-
-/*FOOTER*/
-
-footer {
-    padding: 10rem 0;
-}
-
-footer ul.social-links {
-    list-style: none;
-    margin: 0;
-    position: relative;
-}
-
-footer ul.social-links li {
-    margin-top: 1rem;
-    position: relative;
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    margin-right: 1.6rem;
-}
-
-
-
-
-
-
-
 
 
 /*BUTTONS*/
@@ -440,7 +405,7 @@ a.primary-button-inline:hover {
 
 
 
-/*Projects Page*/
+/*Projects*/
 
 .project-preview {
     max-width: 320px;
