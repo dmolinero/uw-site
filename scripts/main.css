@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,600');
 
+
+/* GLOBAL STYLES (MOBILE-FIRST APPRACH)*/
+
 html * {
     box-sizing: border-box !important;
     font-family: 'Hind', sans-serif;
@@ -9,18 +12,6 @@ html * {
 
 html {
     font-size: 8px;
-}
-
-@media only screen and (min-width: 45rem) {
-    html {
-        font-size: 9px;
-    }
-}
-
-@media only screen and (min-width: 60rem) {
-    html {
-        font-size: 10px;
-    }
 }
 
 html,
@@ -131,7 +122,7 @@ h5 {
 }
 
 
-/*NAVIGATION*/
+/*Navigation*/
 
 .title-nav {
     margin-top: 0px;
@@ -209,53 +200,8 @@ nav li {
     overflow: hidden;
 }
 
-@media(min-width: 45rem) {
-    nav {
-        position: relative;
-        height: 10rem;
-        top: 0;
-        width: 100%;
-        transform: translateX(0);
-        opacity: 1;
-    }
 
-    nav.open {
-        box-shadow: none;
-    }
-
-    nav ul {
-        text-align: right;
-        font-size: 0;
-    }
-
-    nav li {
-        display: inline-block;
-        width: 25%;
-        height: 10rem;
-    }
-
-    nav li a {
-        text-align: center;
-        display: inline-block;
-        width: 100%;
-        height: 10rem;
-        padding: 4rem 0;
-    }
-
-    nav li span {
-        text-align: center;
-        padding: 4rem 0;
-    }
-
-    .close-button,
-    .nav-icon {
-        display: none;
-    }
-}
-
-
-
-/*FOOTER*/
+/*Footer*/
 
 footer {
     padding: 10rem 0;
@@ -275,7 +221,7 @@ footer ul.social-links li {
 }
 
 
-/*CONTACT FORM*/
+/*COntact form*/
 
 #contact-form label {
     display: inline-block;
@@ -311,7 +257,7 @@ footer ul.social-links li {
 }
 
 
-/*BUTTONS*/
+/*Buttons*/
 
 .primary-button {
     background: #1e78d7;
@@ -342,13 +288,7 @@ a.primary-button-inline:hover {
 }
 
 
-
-
-
-
-
-
-/*HOME PAGE*/
+/*Layout styles*/
 
 .welcome-text h1 {
     margin-bottom: 4rem;
@@ -358,49 +298,28 @@ a.primary-button-inline:hover {
     text-align: left;
 }
 
-@media only screen and (min-width: 45rem) {
-
-    .welcome-text {
-        text-align: left;
-        position: relative;
-        left: 31.33%;
-        padding-left: 2rem;
-    }
-    .welcome-image {
-        position: relative;
-        left: -66.66%;
-    }
-}
-
-
-
-
-/* About Page*/
-
-.about-text p {
+.long-text p {
     margin-bottom: 2rem;
 }
 
-.tech-icons {
+.icon-list {
     list-style: none;
     padding: 0;
 }
 
-.tech-icons li {
+.icon-list li {
     margin-right: 1rem;
     display: inline-block;
     font-size: 4rem;
 }
 
-.about-image {
+.image-right {
     text-align: right;
 }
 
-.about-image img {
+.image-right img {
     max-width: 30rem;
 }
-
-
 
 
 /*Projects*/
@@ -448,29 +367,92 @@ a.primary-button-inline:hover {
     opacity: 1;
 }
 
-
-
-
-/*WTA PAGE*/
-
-.wta-page p {
-    margin-bottom: 2rem;
-}
-
 .project-logo {
     max-width: 100px;
     display: inline-block;
 }
 
-@media only screen and (min-width: 45rem) {
+.project-page div.section-title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 
+
+
+/*LARGER THAN MOBILE PHONES*/
+@media(min-width: 45rem) {
+
+    html {
+        font-size: 9px;
+    }
+
+    /*Welcome styles*/
+    .welcome-text {
+        text-align: left;
+        position: relative;
+        left: 31.33%;
+        padding-left: 2rem;
+    }
+    .welcome-image {
+        position: relative;
+        left: -66.66%;
+    }
+
+
+    /*Nav styles*/
+    nav {
+        position: relative;
+        height: 10rem;
+        top: 0;
+        width: 100%;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    nav.open {
+        box-shadow: none;
+    }
+
+    nav ul {
+        text-align: right;
+        font-size: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 25%;
+        height: 10rem;
+    }
+
+    nav li a {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        height: 10rem;
+        padding: 4rem 0;
+    }
+
+    nav li span {
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .close-button,
+    .nav-icon {
+        display: none;
+    }
+
+
+    /*Project styles*/
     .project-logo {
         max-width: 100%;
         display: inline-block;
     }
 }
 
-.wta-page div.section-title {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+/*SPECIFIC TO LARGE DEVICES*/
+@media only screen and (min-width: 60rem) {
+    html {
+        font-size: 10px;
+    }
 }
